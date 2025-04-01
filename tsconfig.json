@@ -16,6 +16,20 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@project-manager-api/*": [
+        "apps/project-manager-api/src/*"
+      ],
+      "@tasks/*": [
+        "apps/tasks/src/*"
+      ],
+      "default/common": [
+        "libs/common/src"
+      ],
+      "default/common/*": [
+        "libs/common/src/*"
+      ]
+    }
   }
 }
