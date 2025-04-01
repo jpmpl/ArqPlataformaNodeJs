@@ -21,4 +21,8 @@ export class UsersRepositoryService
         //console.log('payload', payload);
         return this.save(payload) as Promise<IUser>;
     }
+
+    findByEmail(email: string): Promise<IUser> {
+        return this.findOneByOrFail({ email });
+    }
 }
